@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.26.170.59819",
-      "templateHash": "7896696975137807491"
+      "templateHash": "3854547728767651399"
     }
   },
   "parameters": {
@@ -345,7 +345,7 @@
         "CostCentre": "HDD"
       },
       "properties": {
-        "isSftpEnabled": true
+        "supportsHttpsTrafficOnly": true
       }
     },
     {
