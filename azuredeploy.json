@@ -111,7 +111,7 @@
     },
     "cosmosDBAccountName": {
       "type": "string",
-      "defaultValue": "[format('cosmosdb-account-{0}', uniqueString(resourceGroup().id))]",
+      "defaultValue": "[format('cosmosdb-accnt-{0}', uniqueString(resourceGroup().id))]",
       "metadata": {
         "description": "Optional. Cosmos DB account name, max length 44 characters, lowercase"
       }
