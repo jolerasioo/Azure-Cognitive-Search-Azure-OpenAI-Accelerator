@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.26.170.59819",
-      "templateHash": "7896696975137807491"
+      "templateHash": "8839303356155595025"
     }
   },
   "parameters": {
@@ -343,9 +343,6 @@
       },
       "tags": {
         "CostCentre": "HDD"
-      },
-      "properties": {
-        "isSftpEnabled": true
       }
     },
     {
@@ -363,7 +360,7 @@
       },
       "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
       "apiVersion": "2023-01-01",
-      "name": "[format('{0}/{1}/{2}', parameters('blobStorageAccountName'), 'default', createArray('books', 'cord19', 'mixed')[copyIndex()])]",
+      "name": "[format('{0}/{1}/{2}', parameters('blobStorageAccountName'), 'deff', createArray('b', 'c19', 'm')[copyIndex()])]",
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('blobStorageAccountName'), 'default')]"
       ]

@@ -245,6 +245,9 @@ resource blobStorageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   tags:  {
     CostCentre : 'HDD'
   }
+  properties:{
+    isSftpEnabled: true
+  }
 }
 
 resource blobServices 'Microsoft.Storage/storageAccounts/blobServices@2023-01-01' = {
