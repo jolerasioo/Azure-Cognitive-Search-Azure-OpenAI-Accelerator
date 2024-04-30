@@ -246,7 +246,7 @@ resource blobStorageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
     CostCentre : 'HDD'
   }
   properties:{
-    isSftpEnabled: true
+    supportsHttpsTrafficOnly: true
   }
 }
 
