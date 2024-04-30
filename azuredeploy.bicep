@@ -89,6 +89,9 @@ resource azureSearch 'Microsoft.Search/searchServices@2021-04-01-Preview' = {
     hostingMode: azureSearchHostingMode
     semanticSearch: 'standard'
   }
+  tags:  {
+    CostCentre : 'HDD'
+  }
 }
 
 resource cognitiveService 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
@@ -103,6 +106,9 @@ resource cognitiveService 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
       statisticsEnabled: false
     }
   }
+  tags:  {
+    CostCentre : 'HDD'
+  }
 }
 
 resource SQLServer 'Microsoft.Sql/servers@2022-11-01-preview' = {
@@ -111,6 +117,9 @@ resource SQLServer 'Microsoft.Sql/servers@2022-11-01-preview' = {
   properties: {
     administratorLogin: SQLAdministratorLogin
     administratorLoginPassword: SQLAdministratorLoginPassword
+  }
+  tags:  {
+    CostCentre : 'HDD'
   }
 }
 
@@ -121,6 +130,9 @@ resource SQLDatabase 'Microsoft.Sql/servers/databases@2022-11-01-preview' = {
   sku: {
     name: 'Standard'
     tier: 'Standard'
+  }
+  tags:  {
+    CostCentre : 'HDD'
   }
 }
 
@@ -153,6 +165,9 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2023-04-15' = {
       }
     ]
   }
+  tags:  {
+    CostCentre : 'HDD'
+  }
 }
 
 resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2023-04-15' = {
@@ -163,6 +178,9 @@ resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@20
     resource: {
       id: cosmosDBDatabaseName
     }
+  }
+  tags:  {
+    CostCentre : 'HDD'
   }
 }
 
@@ -183,6 +201,9 @@ resource cosmosDBContainer 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/c
       defaultTtl: 1000
     }
   }
+  tags:  {
+    CostCentre : 'HDD'
+  }
 }
 
 resource bingSearchAccount 'Microsoft.Bing/accounts@2020-06-10' = {
@@ -191,6 +212,9 @@ resource bingSearchAccount 'Microsoft.Bing/accounts@2020-06-10' = {
   location: 'global'
   sku: {
     name: 'S1'
+  }
+  tags:  {
+    CostCentre : 'HDD'
   }
 }
 
@@ -206,6 +230,9 @@ resource formRecognizerAccount 'Microsoft.CognitiveServices/accounts@2023-05-01'
       statisticsEnabled: false
     }
   }
+  tags:  {
+    CostCentre : 'HDD'
+  }
 }
 
 resource blobStorageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
@@ -214,6 +241,9 @@ resource blobStorageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   kind: 'StorageV2'
   sku: {
     name: 'Standard_LRS'
+  }
+  tags:  {
+    CostCentre : 'HDD'
   }
 }
 
